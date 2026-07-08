@@ -18,6 +18,9 @@ Farklı kitap kategorilerindeki (Ödüllü Kitaplar, Öne Çıkan Kitaplar, Puli
 pip install selenium webdriver-manager beautifulsoup4 pandas
 python idefix_scraper.py
 
+## Veri Temizleme
+
+Ham veride (`idefix_urunler_ham.csv`) ürün adının başında yayınevi ismi gereksiz şekilde tekrarlanıyordu (örnek: "Everest YayınlarıKaçakçı Şahan - Everest Yayınları"). Bu problem giderilerek ürün adları sadeleştirildi ve ayrıca `indirim_orani_%` sütunu hesaplanarak temiz veri setine (`idefix_urunler_temiz.csv`) eklendi.
 ## Bulgular
 - Pulitzer Ödüllü Kitaplar kategorisi, ortalama fiyat açısından diğer iki kategoriye göre belirgin şekilde daha pahalı (~621 TL ortalama, en yüksek 2990 TL).
 - İncelenen ürünlerin çoğunda indirim oranı sabit olarak %25 civarında.
